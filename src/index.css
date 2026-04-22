@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+    /* 💗 Colors */
+    --color-primary: #ff6b9a;
+    --color-primary-soft: #ff9bb3;
+
+    /* 🌷 Gradient */
+    --background-image-love: linear-gradient(135deg, #ffe4ec, #ffd6cc, #fff1e6);
+
+    /* 🎀 Fonts */
+    --font-poppins: "Poppins", sans-serif;
+    --font-cute: "Pacifico", cursive;
+    --font-romantic: "Dancing Script", cursive;
+}
+
+/* 🌍 Base styles */
+@layer base {
+    body {
+        @apply min-h-screen bg-love font-poppins text-gray-700;
+    }
+}
+
+/* 💎 Components (reusable UI) */
+@layer components {
+    .glass-card {
+        @apply backdrop-blur-lg bg-white/40 border border-white/30 rounded-2xl shadow-xl p-6;
+    }
+
+    .btn-love {
+        @apply px-6 py-2 rounded-full text-white font-poppins font-medium bg-gradient-to-r from-primary to-primary-soft shadow-lg hover:scale-150 transition-all duration-300;
+    }
+
+    .heading-romantic {
+        @apply text-primary;
+        font-family: var(--font-romantic);
+    }
+
+    .heading-cute {
+        @apply text-primary;
+        font-family: var(--font-cute);
+    }
+}
+
+/* ✨ Animations */
+@layer utilities {
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+}
+
+@layer utilities {
+    @keyframes float-up {
+        0% {
+            transform: translateY(0) scale(0.8);
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(-100vh) scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    .heart {
+        position: absolute;
+        bottom: -20px;
+        font-size: 20px;
+        animation: float-up linear infinite;
+        opacity: 0.7;
+    }
+}
