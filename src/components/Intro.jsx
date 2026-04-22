@@ -45,7 +45,7 @@ const Intro = ({ next }) => {
                 variants={item}
                 className='mb-5 w-[80%]'
             >
-                <img src={introImg} loading='lazy' />
+                <img src={introImg} />
             </motion.div>
 
             <motion.p

@@ -42,6 +42,7 @@ const ProgressBar = ({ onComplete }) => {
                         <motion.img
                             key="infinity-image"
                             src={heartImg}
+                            loading='eager'
                             alt="Infinity Love"
                             className="w-12 h-12 sm:w-24 sm:h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 rounded-full shadow-md object-cover"
                             initial={{ scale: 0, rotate: -90, opacity: 0 }}
