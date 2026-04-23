@@ -78,6 +78,7 @@ git clone https://github.com/your-username/heart-flow.git
 cd heart-flow
 npm install
 npm run dev
+```
 
 ## ⚠️ Notes
 
