@@ -1,9 +1,14 @@
-# 💖 Heart Flow  
-### An Interactive Apology Experience
+<h1 align="center">💖 Heart Flow </h1>  
+
+<p align="center">
+    <em> An Interactive Apology Experience. </em>
+</p>
 
 ## 🎬 Preview
 
-![Preview](./preview.gif)
+<div align="center">
+    ![Preview](./preview.gif)
+</div>
 
 ---
 
