@@ -4,7 +4,7 @@
     <em> An Interactive Apology Experience. </em>
 </p>
 
-<h2 align="center">🎬 Preview</h2>
+<h2>🎬 Preview</h2>
 
 <p align="center">
   <img src="./preview.gif" alt="Preview" width="600" />
