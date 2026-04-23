@@ -7,11 +7,11 @@ import Reveal from './components/Reveal'
 import Final from './components/Final'
 import Card from './components/ui/Card'
 import FutureHope from './components/FutureHope'
-import introImg from '../assets/intro.png'
-import coupleImg from '../assets/reveal.png'
+import introImg from './assets/intro.png'
+import coupleImg from './assets/reveal.png'
 import finalImg from './assets/final.png'
-import heartImg from '../../assets/heart.png'
-import byeImg from '../assets/final.png'
+import heartImg from './assets/heart.png'
+import byeImg from './assets/final.png'
 
 const App = () => {
 
